@@ -78,12 +78,12 @@ export const Homepage = () => {
           <img
             src="/Google Play.png"
             alt="Google Play Logo"
-            className="h-8 w-auto object-contain lg:h-40 xl:h-10"
+            className="h-8 w-auto object-contain lg:h-28 xl:h-10"
           />
           <img
             src="/App Store.png"
             alt="App Store Logo"
-            className="h-8 w-auto object-contain lg:h-40 xl:h-10"
+            className="h-8 w-auto object-contain lg:h-28 xl:h-10"
           />
         </div>
       </motion.div>
