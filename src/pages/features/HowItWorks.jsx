@@ -18,44 +18,44 @@ export const HowItWorks = () => {
   const steps = [
     {
       step: "STEP 01",
-      title: "Request & Broadcast",
-      subtitle: "Sourcing & Broadcasting",
-      desc: "It starts with your daily workforce needs. Contact us with your requirements, and the job vacancy is instantly broadcasted live on our dedicated applicant mobile app.",
+      title: "Route Planning",
+      subtitle: "Smart Shift & Patrol Scheduling",
+      desc: "The system schedules guard shifts and creates precise patrol routes— assigning specific digital checkpoints for every hour of the day.",
       images: ["/step/step01.jpg", "/step/step01-2.jpg"],
     },
     {
       step: "STEP 02",
-      title: "Apply & Review",
-      subtitle: "Applicant Review",
-      desc: "Job seekers register and apply directly through the app. You gain immediate access to a dashboard where you can view the complete, detailed profiles of every registered candidate.",
+      title: "Digital Check-In",
+      subtitle: "GPS & Facial Recognition Attendance",
+      desc: "Security personnel arrive on-site and clock in via the mobile app using GPS location and facial recognition to verify their attendance.",
       images: "/step/step02.jpg",
     },
     {
       step: "STEP 03",
-      title: "AI-Powered Matching",
-      subtitle: "Smart Selection",
-      desc: "No more manual sorting. Our built-in AI automatically screens all applicants and selects the most qualified candidates that perfectly match your specific job categories.",
+      title: "Verified Patrolling",
+      subtitle: "QR Code & NFC Tag Scanning",
+      desc: "Guards walk the perimeter and scan physical QR codes or NFC tags at each checkpoint to prove their exact location and presence.",
       images: "/step/step03.png",
     },
     {
       step: "STEP 04",
-      title: "Digital Contracting",
-      subtitle: "Digital Onboarding",
-      desc: "Once the candidate is selected and completed the interview, they will receive their job offers on the app. They can securely review and sign their employment contracts digitally.",
+      title: "Live Monitoring",
+      subtitle: "Real-Time Command Center Tracking",
+      desc: "As guards patrol, data syncs instantly. The command center tracks live patrol progress — knowing exactly which areas have been cleared.",
       images: ["/step/step04-2.jpg", "/step/step04.png"],
     },
     {
       step: "STEP 05",
-      title: "App-Based Attendance",
-      subtitle: "On-Site Operations",
-      desc: "During the event, workers use the mobile app to clock in and out. The app validates their presence on-site, ensuring strict, real-time attendance tracking for your operations.",
+      title: "Incident Resolution",
+      subtitle: "Instant Digital Reporting & Alerts",
+      desc: "If anomalies are found, guards capture photos and submit instant digital reports — triggering immediate alerts to management.",
       images: ["/step/step05.jpg", "/step/step05-2.jpg"],
     },
     {
       step: "STEP 06",
-      title: "Payroll & Invoicing",
-      subtitle: "Automated Settlement",
-      desc: "Attendance data automatically calculates worker payroll, generating instant digital payslips. Simultaneously, the system sends an automated invoice and a complete performance report directly to you.",
+      title: "Automated Reporting",
+      subtitle: "Transparent Daily Security Logs",
+      desc: "At shift end, all patrol data, incident logs, and attendance records are automatically compiled into a secure, untampered digital report.",
       images: "/step/step06.png",
     },
   ];
@@ -66,21 +66,41 @@ export const HowItWorks = () => {
       <div className="pointer-events-none absolute -left-20 -top-20 h-80 w-80 rounded-full bg-sky-200 blur-[120px]" />
       <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-sky-200 blur-[120px]" />
 
+      {/* Top Navigation */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="relative z-10 mb-8 flex w-full items-center justify-between lg:mb-16 xl:mb-12"
+      >
+        {/* Tombol Kembali - kiri atas */}
+        <button
+          onClick={() => navigate(-1)}
+          className="hover:bg-primary border-primary group flex cursor-pointer items-center gap-2 rounded-full border bg-white px-4 py-2 shadow-lg transition-all hover:scale-110 lg:gap-4 lg:px-8 lg:py-4 xl:gap-3 xl:px-6 xl:py-3"
+        >
+          <FaArrowLeft className="text-primary text-base group-hover:text-white lg:text-4xl xl:text-lg" />
+          <span className="text-primary text-sm font-bold uppercase group-hover:text-white lg:text-3xl xl:text-base">
+            Back
+          </span>
+        </button>
+
+        {/* Tombol Home - kanan atas */}
+        <button
+          onClick={() => navigate("/")}
+          className="bg-primary/10 text-primary hover:bg-primary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:scale-110 hover:text-white lg:h-24 lg:w-24 xl:h-12 xl:w-12"
+        >
+          <FaHome className="text-lg lg:text-5xl xl:text-xl" />
+        </button>
+      </motion.div>
+
       {/* Header Halaman */}
-      <div className="mb-4 flex w-full justify-center lg:mb-20 xl:mb-10">
-        <img
-          src="/logo.png"
-            alt="Guard Logo"
-          className="h-auto w-[40%] object-contain lg:w-[50%] xl:w-[15%]"
-        />
-      </div>
-      <div className="mb-10 text-center xl:text-center lg:text-left lg:mb-20 xl:mb-16">
-        <h1 className="text-primary text-2xl font-black tracking-tight lg:text-6xl xl:text-3xl">
-          How Casual Work Operates
+      <div className="mb-10 text-center lg:mb-20 xl:mb-16">
+        <h1 className="text-primary text-2xl font-black tracking-tight lg:text-7xl xl:text-3xl">
+          The Seamless Security Patrol Journey
         </h1>
-        <p className="mt-4 text-sm font-medium text-black lg:mt-8 lg:text-4xl xl:mt-2 xl:text-lg">
-          From your initial request to final invoicing, discover how our
-          end-to-end ecosystem fully automates your daily worker management.
+        <p className="mt-4 text-sm font-semibold text-black lg:mt-10 lg:text-5xl xl:mt-2 xl:text-lg">
+          How we turn manual guarding into a fully accountable, digital
+          operation.
         </p>
       </div>
 
@@ -123,39 +143,6 @@ export const HowItWorks = () => {
             </div>
           </motion.div>
         ))}
-      </div>
-
-      {/* Navigation Bar Bawah */}
-      <div className="mt-16 flex w-full justify-center lg:mt-24 xl:mt-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          className="flex items-center gap-6 p-3 lg:gap-8 lg:p-6 xl:gap-4 xl:p-4"
-        >
-          {/* Tombol Kembali */}
-          <button
-            onClick={() => navigate(-1)}
-            className="group flex cursor-pointer items-center gap-4 rounded-full border border-slate-100 bg-white px-6 py-2 shadow-lg transition-all hover:scale-110 hover:bg-slate-50 lg:px-12 lg:py-8 xl:px-4 xl:py-4"
-          >
-            <FaArrowLeft className="group-hover:text-primary text-lg text-slate-500 lg:text-4xl xl:text-xl" />
-            <span className="group-hover:text-primary text-sm font-bold uppercase text-slate-500 lg:text-2xl xl:text-base">
-              Kembali
-            </span>
-          </button>
-
-          {/* Divider vertikal tipis agar mirip desain referensi */}
-          <div className="h-8 w-1 bg-slate-200 lg:h-16" />
-
-          {/* Tombol Home */}
-          <button
-            onClick={() => navigate("/")}
-            className="bg-primary/10 text-primary hover:bg-primary flex h-12 w-12 cursor-pointer items-center justify-center rounded-full transition-all duration-300 hover:scale-110 hover:text-white lg:h-24 lg:w-24 xl:h-14 xl:w-14"
-          >
-            <FaHome className="text-xl lg:text-5xl xl:text-2xl" />
-          </button>
-        </motion.div>
       </div>
     </div>
   );

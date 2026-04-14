@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 export const FeatureTabs = ({ items, activeTab, onTabChange }) => {
   return (
     // Tambahkan justify-center agar jika tab sedikit ( < 4) tetap rapi di tengah
-    <div className="mb-10 flex w-full justify-center overflow-hidden px-10">
+    <div className="mb-10 flex w-full justify-center overflow-hidden px-6">
       <Swiper
         // Gunakan auto agar lebar slide mengikuti isi tombol
         slidesPerView={"auto"}
@@ -28,10 +28,10 @@ export const FeatureTabs = ({ items, activeTab, onTabChange }) => {
           >
             <button
               onClick={() => onTabChange(tab.id)}
-              className={`flex min-w-fit items-center justify-center gap-3 rounded-2xl border p-6 transition-all duration-300 ${
+              className={`flex min-w-fit items-center justify-center gap-3 rounded-full border p-6 transition-all duration-300 ${
                 activeTab === tab.id
                   ? "border-primary bg-primary scale-105 text-white shadow-xl"
-                  : "cursor-pointer border-slate-300 bg-white text-black shadow-xl shadow-blue-200 hover:scale-105 hover:bg-slate-200"
+                  : "cursor-pointer border-blue-700 bg-white text-black shadow-xl shadow-blue-200 hover:scale-105 hover:bg-slate-200"
               }`}
             >
               <span className="text-xl lg:text-4xl xl:text-2xl">
