@@ -45,28 +45,28 @@ export const WhatIs = () => {
     {
       title: "Uncompromised Accountability",
       description:
-        "Replace manual logbooks with tamper-proof digital records, ensuring total transparency for patrols, incident reports, and administrative audits.",
+        "Replace manual logbooks with digital records to ensure total transparency regarding patrols, incident reports and administrative audits.",
       icon: <IoShieldCheckmark />,
       bgIcon: "bg-blue-900",
     },
     {
       title: "Real-Time Operational Visibility",
       description:
-        "Gain immediate, centralized insights into ground operations, personnel deployment, and facility status at any given moment.",
+        "Gain immediate, centralised insights into ground operations, personnel deployment and facility status at any time.",
       icon: <IoEye />,
       bgIcon: "bg-blue-900",
     },
     {
       title: "Proactive Risk Mitigation",
       description:
-        "Shift from reactive security measures to a preventative defense strategy through intelligent alerts and AI-powered monitoring.",
+        "Transition from reactive security measures to a preventive defence strategy by utilising intelligent alerts and AI-powered monitoring.",
       icon: <MdElectricBolt />,
       bgIcon: "bg-blue-900",
     },
     {
       title: "Optimized Efficiency",
       description:
-        "Streamline communication and reporting workflows, allowing security personnel to focus on active protection rather than administrative tasks.",
+        "Streamline communication and reporting workflows to allow security personnel to focus on active protection rather than administrative tasks.",
       icon: <IoLayers />,
       bgIcon: "bg-blue-900",
     },
@@ -118,16 +118,15 @@ export const WhatIs = () => {
               Integrated Security Management Platform
             </h1>
             <p className="mx-auto max-w-6xl text-base font-medium leading-relaxed text-slate-500 lg:text-3xl xl:text-lg">
-              A comprehensive digital ecosystem designed to modernize and
-              optimize facility protection. By integrating advanced technology
-              with on-the-ground operations, the system delivers total
-              visibility, rapid response capabilities, and uncompromised
-              security management.
+              This is a comprehensive digital ecosystem designed to modernise
+              and optimise facility protection. By integrating advanced
+              technology with ground operations, it delivers total visibility,
+              rapid response capabilities and robust security management.
             </p>
           </section>
 
           {/* Section Label */}
-          <span className="text-primary border-primary border-l-10 pl-3 text-5xl font-extrabold uppercase">
+          <span className="text-primary border-primary border-l-10 pl-3 text-base font-extrabold uppercase lg:text-5xl xl:text-2xl">
             Core Features
           </span>
 
@@ -143,7 +142,7 @@ export const WhatIs = () => {
                 className="flex items-start gap-4 rounded-2xl border border-blue-700 bg-slate-200 p-5 shadow-xl"
               >
                 <div
-                  className={`${feature.bgIcon} flex h-20 w-20 shrink-0 items-center justify-center rounded-full text-5xl text-white`}
+                  className={`${feature.bgIcon} flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm text-white lg:h-20 lg:w-20 lg:text-5xl xl:h-10 xl:w-10 xl:text-2xl`}
                 >
                   {feature.icon}
                 </div>
@@ -153,12 +152,12 @@ export const WhatIs = () => {
                       {feature.title}
                     </h3>
                     {feature.subtitle && (
-                      <span className="rounded-full bg-sky-200 px-4 py-1 text-3xl font-semibold text-sky-700">
+                      <span className="rounded-full bg-sky-200 px-4 py-1 text-base font-semibold text-sky-700 lg:text-3xl xl:text-base">
                         {feature.subtitle}
                       </span>
                     )}
                   </div>
-                  <p className="text-justify text-3xl font-medium leading-relaxed text-slate-500">
+                  <p className="text-justify text-base font-medium leading-relaxed text-slate-500 lg:text-3xl xl:text-xl">
                     {feature.description}
                   </p>
                 </div>
@@ -167,7 +166,7 @@ export const WhatIs = () => {
           </div>
 
           {/* Section Label */}
-          <span className="text-primary border-primary border-l-10 pl-3 text-5xl font-extrabold uppercase">
+          <span className="text-primary border-primary border-l-10 pl-3 text-base font-extrabold uppercase lg:text-5xl xl:text-2xl">
             Benefits
           </span>
 
@@ -183,14 +182,14 @@ export const WhatIs = () => {
                 className="rounded-4xl flex flex-col gap-3 border border-blue-700 p-5 shadow-xl"
               >
                 <div
-                  className={`${benefit.bgIcon} flex h-20 w-20 items-center justify-center rounded-full text-5xl text-white`}
+                  className={`${benefit.bgIcon} flex h-8 w-8 items-center justify-center rounded-full text-sm text-white lg:h-20 lg:w-20 lg:text-5xl xl:h-10 xl:w-10 xl:text-2xl`}
                 >
                   {benefit.icon}
                 </div>
                 <h3 className="text-primary text-lg font-extrabold lg:text-4xl xl:text-2xl">
                   {benefit.title}
                 </h3>
-                <p className="text-3xl font-medium leading-relaxed text-slate-500">
+                <p className="text-base font-medium leading-relaxed text-slate-500 lg:text-3xl xl:text-xl">
                   {benefit.description}
                 </p>
               </motion.div>

@@ -28,7 +28,7 @@ export const Homepage = () => {
         className="relative z-10 flex flex-col items-center text-center"
       >
         {/* Logo Icon (Hexagon Abstract) */}
-        <div className="lg:h-160 lg:w-160 mb-10 flex h-32 w-32 items-center justify-center xl:h-80 xl:w-80">
+        <div className="lg:h-160 lg:w-160 mb-10 flex h-32 w-32 items-center justify-center xl:h-40 xl:w-40">
           <img
             src="/logo.png"
             alt="Guard Logo"
@@ -43,7 +43,7 @@ export const Homepage = () => {
 
         {/* Subtitle */}
         <p className="text-secondary2 mt-2 text-sm font-semibold uppercase tracking-[0.2em] lg:text-4xl xl:text-2xl">
-          SECURITY Management System
+          Security Management System
         </p>
 
         {/* 3. Interaction Prompt */}

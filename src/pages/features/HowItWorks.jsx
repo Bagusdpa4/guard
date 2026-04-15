@@ -17,46 +17,34 @@ export const HowItWorks = () => {
 
   const steps = [
     {
-      step: "STEP 01",
-      title: "Route Planning",
-      subtitle: "Smart Shift & Patrol Scheduling",
-      desc: "The system schedules guard shifts and creates precise patrol routes— assigning specific digital checkpoints for every hour of the day.",
-      images: ["/step/step01.jpg", "/step/step01-2.jpg"],
+      title: "Structured Security Operations",
+      desc: "Shelter Guard helps us run security operations in a more organized and systematic way. Every patrol activity, checkpoint movement, and field report is managed within one integrated system, making daily operations more controlled and easier to oversee.",
+      images: "/step/step1.jpg",
     },
     {
-      step: "STEP 02",
-      title: "Digital Check-In",
-      subtitle: "GPS & Facial Recognition Attendance",
-      desc: "Security personnel arrive on-site and clock in via the mobile app using GPS location and facial recognition to verify their attendance.",
-      images: "/step/step02.jpg",
+      title: "Real-Time Visibility",
+      desc: "All security activities are recorded digitally and monitored in real time. This gives us clear visibility over what is happening on the ground, ensuring that operations are not only running, but also visible, trackable, and accountable.",
+      images: "/step/step2.png",
     },
     {
-      step: "STEP 03",
-      title: "Verified Patrolling",
-      subtitle: "QR Code & NFC Tag Scanning",
-      desc: "Guards walk the perimeter and scan physical QR codes or NFC tags at each checkpoint to prove their exact location and presence.",
-      images: "/step/step03.png",
+      title: "Faster Incident Reporting",
+      desc: "Any finding or incident in the field can be reported instantly with complete supporting details. This allows follow-up actions to be carried out faster, with better accuracy and stronger coordination across the operation.",
+      images: "/step/step3.jpg",
     },
     {
-      step: "STEP 04",
-      title: "Live Monitoring",
-      subtitle: "Real-Time Command Center Tracking",
-      desc: "As guards patrol, data syncs instantly. The command center tracks live patrol progress — knowing exactly which areas have been cleared.",
-      images: ["/step/step04-2.jpg", "/step/step04.png"],
+      title: "Measurable Performance",
+      desc: "Shelter Guard transforms routine security activities into measurable performance. Instead of depending on manual reports or assumptions, we use real-time data to ensure every task is completed properly and every service delivered has clear proof of execution.",
+      images: "/step/step4.jpg",
     },
     {
-      step: "STEP 05",
-      title: "Incident Resolution",
-      subtitle: "Instant Digital Reporting & Alerts",
-      desc: "If anomalies are found, guards capture photos and submit instant digital reports — triggering immediate alerts to management.",
-      images: ["/step/step05.jpg", "/step/step05-2.jpg"],
+      title: "Stronger Operational Control",
+      desc: "With better data and documentation, we gain stronger control over the entire security operation. Every activity becomes easier to track, every issue becomes easier to trace, and every decision can be made based on actual field information.",
+      images: "/step/step5.jpg",
     },
     {
-      step: "STEP 06",
-      title: "Automated Reporting",
-      subtitle: "Transparent Daily Security Logs",
-      desc: "At shift end, all patrol data, incident logs, and attendance records are automatically compiled into a secure, untampered digital report.",
-      images: "/step/step06.png",
+      title: "Professional and Transparent Service",
+      desc: "More than just a monitoring tool, Shelter Guard helps us deliver a security service that is more disciplined, more responsive, and more professional. It also builds greater client confidence because every service is consistently documented, verifiable, and transparent.",
+      images: "/step/step6.jpg",
     },
   ];
 
@@ -98,7 +86,7 @@ export const HowItWorks = () => {
         <h1 className="text-primary text-2xl font-black tracking-tight lg:text-7xl xl:text-3xl">
           The Seamless Security Patrol Journey
         </h1>
-        <p className="mt-4 text-sm font-semibold text-black lg:mt-10 lg:text-5xl xl:mt-2 xl:text-lg">
+        <p className="mt-4 text-sm font-semibold text-slate-500 lg:mt-10 lg:text-5xl xl:mt-2 xl:text-lg">
           How we turn manual guarding into a fully accountable, digital
           operation.
         </p>
@@ -119,11 +107,11 @@ export const HowItWorks = () => {
           >
             {/* Bagian Teks */}
             <div className="flex-1 space-y-4 text-left">
-              <span className="bg-primary inline-block rounded-full px-6 py-2 text-sm font-bold text-white lg:text-4xl xl:text-lg">
+              {/* <span className="bg-primary inline-block rounded-full px-6 py-2 text-sm font-bold text-white lg:text-4xl xl:text-lg">
                 {item.step}
-              </span>
+              </span> */}
               <div className="space-y-1">
-                <h2 className="text-primary text-3xl font-black leading-tight lg:text-7xl xl:text-5xl">
+                <h2 className="text-primary text-3xl font-black leading-tight lg:text-6xl xl:text-3xl">
                   {item.title}
                 </h2>
                 <p className="text-lg font-extrabold leading-tight text-slate-500 lg:text-5xl xl:text-2xl">
@@ -137,7 +125,7 @@ export const HowItWorks = () => {
 
             {/* Phone Frame Section */}
             <div className="flex w-full flex-1 justify-center">
-              <div className="max-w-62.5 lg:max-w-100 xl:max-w-65 w-full">
+              <div className="max-w-62.5 lg:max-w-100 xl:max-w-80 w-full">
                 <PhoneFrame screenshot={item.images} index={index} />
               </div>
             </div>

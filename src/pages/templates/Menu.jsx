@@ -4,7 +4,7 @@ import { FaHome, FaRegStar, FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { PiWarningCircle } from "react-icons/pi";
 import { BiRepost } from "react-icons/bi";
-import { IoIosRocket } from "react-icons/io";
+import { IoRocketOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 export const Menu = () => {
@@ -31,7 +31,7 @@ export const Menu = () => {
     },
     {
       title: "Request Demo",
-      icon: <IoIosRocket />,
+      icon: <IoRocketOutline />,
       bgIcon: "bg-blue-900",
       path: "/req-demo",
     },
@@ -60,15 +60,15 @@ export const Menu = () => {
           ease: [0.16, 1, 0.3, 1], // Custom cubic-bezier untuk efek 'out-expo'
           delay: 0.1,
         }}
-        className="relative z-10 w-full max-w-sm overflow-hidden p-0 backdrop-blur-md lg:max-w-5xl lg:p-4 xl:max-w-xl xl:p-4"
+        className="relative z-10 w-full max-w-sm overflow-hidden p-0 backdrop-blur-md lg:max-w-5xl lg:p-4 xl:max-w-3xl xl:p-4"
       >
         {/* Header Section */}
-        <div className="py-6 text-center lg:py-10 xl:py-2">
+        <div className="py-6 text-center lg:py-10 xl:py-4">
           <div className="mb-4 flex w-full justify-center lg:mb-4 xl:mb-6">
             <img
               src="/logo.png"
               alt="Guard Logo"
-              className="h-auto w-[60%] object-contain lg:w-[30%] xl:w-[40%]"
+              className="h-auto w-[60%] object-contain lg:w-[30%] xl:w-[20%]"
             />
           </div>
           <h1 className="text-primary py-2 text-xl font-black tracking-tight lg:py-4 lg:text-7xl xl:py-2 xl:text-3xl">
@@ -92,9 +92,9 @@ export const Menu = () => {
               onClick={() => navigate(item.path)}
               className="group flex w-full cursor-pointer items-center justify-between rounded-[1.5rem] border border-blue-700 bg-blue-100/70 p-4 shadow-xl transition-all hover:shadow-md lg:rounded-[3rem] lg:p-8 xl:rounded-[2rem] xl:p-5"
             >
-              <div className="flex items-center gap-4 lg:gap-8 xl:gap-6">
+              <div className="flex items-center gap-4 lg:gap-8 xl:gap-4">
                 <div
-                  className={`flex h-10 w-10 items-center justify-center rounded-full lg:h-20 lg:w-20 xl:h-12 xl:w-12 ${item.bgIcon}`}
+                  className={`flex h-10 w-10 items-center justify-center rounded-full lg:h-20 lg:w-20 xl:h-10 xl:w-10 ${item.bgIcon}`}
                 >
                   {React.cloneElement(item.icon, {
                     className: "text-lg xl:text-2xl text-white lg:text-5xl",
@@ -106,7 +106,7 @@ export const Menu = () => {
                   </h3>
                 </div>
               </div>
-              <FaArrowRight className="text-primary hidden lg:block lg:text-4xl xl:block xl:text-2xl" />
+              <FaArrowRight className="text-primary hidden lg:block lg:text-4xl xl:block xl:text-xl" />
             </motion.button>
           ))}
         </div>

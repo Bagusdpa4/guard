@@ -30,17 +30,9 @@ export const AllFeatures = () => {
       icon: <CiDeliveryTruck />,
       contents: [
         {
-          key: "Logistics Security",
           title: "Transporter",
-          subtitle: "Dispatches Today",
-          count: "14",
-          desc: "Streamline logistics and supply chain security. This feature provides comprehensive tracking and management of transport assets, ensuring secure and efficient dispatch operations across facilities.",
-          capabilities: [
-            "Vehicle dispatch tracking",
-            "Driver assignment log",
-            "Delivery confirmation",
-            "Route compliance check",
-          ],
+          desc: "Real-time surveillance of goods transporters within secured zones to safeguard assets and eliminate traffic-related fraud.",
+          image: "/features/fitur1.png",
         },
       ],
     },
@@ -49,36 +41,20 @@ export const AllFeatures = () => {
       icon: <IoIosKey />,
       contents: [
         {
-          key: "Key Loan",
-          title: "Key Management",
-          subtitle: "Keys In Circulation",
-          count: "7",
-          desc: "Maintain strict access control. This module accurately records the checkout and return of facility keys, enforcing accountability and restricting unauthorized entry to highly secured areas.",
-          capabilities: [
-            "Key checkout records",
-            "Return timestamp log",
-            "Unauthorized access alert",
-            "Key holder history",
-          ],
+          title: "Keys Control & Management",
+          desc: "To ensure all company assets remain secure while providing authorized personnel with necessary access.To ensure all company assets remain secure while providing authorized personnel with necessary access.",
+          image: "/features/fitur2.png",
         },
       ],
     },
     {
-      id: "Visitor",
+      id: "Visitor Management",
       icon: <FiUsers />,
       contents: [
         {
-          key: "Guest",
           title: "Visitor Management",
-          subtitle: "Visitors On-site",
-          count: "5",
-          desc: "Elevate front-desk security and the guest experience. Systematically log, screen, and monitor facility visitors from arrival to departure, ensuring complete visibility of personnel on-site.",
-          capabilities: [
-            "Guest identity verification",
-            "Visit purpose logging",
-            "Host confirmation",
-            "Departure sign-out",
-          ],
+          desc: "Elevate front-desk security and guest experience. Systematically log, screen, and monitor facility visitors from arrival to departure, ensuring complete visibility of personnel on-site.",
+          image: "/features/fitur3.png",
         },
       ],
     },
@@ -87,36 +63,20 @@ export const AllFeatures = () => {
       icon: <CiMail />,
       contents: [
         {
-          key: "Mail",
           title: "Mail & Document Tracking",
-          subtitle: "Items Logged Today",
-          count: "23",
-          desc: "Digitize the flow of incoming and outgoing correspondence. Prevent misplaced items with a systematic, traceable logging protocol for all essential documents, letters, and packages.",
-          capabilities: [
-            "Inbound mail logging",
-            "Outbound dispatch record",
-            "Recipient confirmation",
-            "Parcel tracking ID",
-          ],
+          desc: "Digitalize the flow of incoming and outgoing correspondence. Prevent misplaced items with a systematic, traceable logging protocol for all essential documents, letters, and packages.",
+          image: "/features/fitur4.jpg",
         },
       ],
     },
     {
-      id: "Project",
+      id: "Project Monitor",
       icon: <LuNotebookText />,
       contents: [
         {
-          key: "Project",
-          title: "Project Monitoring",
-          subtitle: "Active Projects",
-          count: "3",
+          title: "Construction Project Security Monitoring",
           desc: "Oversee site-specific operations with precision. Track ongoing maintenance, vendor activities, or construction projects within the facility to ensure strict adherence to safety standards.",
-          capabilities: [
-            "Vendor activity log",
-            "Milestone tracking",
-            "Safety compliance check",
-            "Project completion report",
-          ],
+          image: "/features/fitur5.jpg",
         },
       ],
     },
@@ -125,36 +85,20 @@ export const AllFeatures = () => {
       icon: <MdPhone />,
       contents: [
         {
-          key: "Telephone Use",
-          title: "Telephone Log",
-          subtitle: "Calls Logged",
-          count: "41",
+          title: "Call Log Operator",
           desc: "Monitor facility communication lines. Maintain accurate, centralized records of telephone usage to optimize resource allocation and provide a clear audit trail for administrative review.",
-          capabilities: [
-            "Call duration records",
-            "Extension usage log",
-            "Outbound call tracking",
-            "Administrative audit trail",
-          ],
+          image: "/features/fitur6.jpg",
         },
       ],
     },
     {
-      id: "Incident",
+      id: "Incident Report",
       icon: <CiWarning />,
       contents: [
         {
-          key: "News",
           title: "Incident Reporting",
-          subtitle: "Reports This Month",
-          count: "8",
           desc: "Standardize official documentation. Swiftly record, categorize, and archive detailed incident reports to ensure prompt administrative action, transparency, and compliance with operational protocols.",
-          capabilities: [
-            "Incident categorization",
-            "Photo evidence upload",
-            "Escalation workflow",
-            "Compliance archiving",
-          ],
+          image: "/features/fitur7.jpg",
         },
       ],
     },
@@ -163,17 +107,9 @@ export const AllFeatures = () => {
       icon: <IoBook />,
       contents: [
         {
-          key: "Daily Log",
-          title: "Daily Log",
-          subtitle: "Entries Today",
-          count: "29",
+          title: "Security Daily Activity Log",
           desc: "Digitize the traditional guard logbook. Accurately record shift activities, routine patrols, and critical operational milestones in a centralized, easily accessible digital format.",
-          capabilities: [
-            "Shift activity entries",
-            "Patrol milestone log",
-            "Guard handover notes",
-            "Digital signature capture",
-          ],
+          image: "/features/fitur8.jpg",
         },
       ],
     },
@@ -182,36 +118,20 @@ export const AllFeatures = () => {
       icon: <FaCar />,
       contents: [
         {
-          key: "Vehicle",
-          title: "Vehicle Logging",
-          subtitle: "Vehicles On-site",
-          count: "18",
+          title: "Vehicle Log",
           desc: "Secure the facility perimeter. Monitor the entry, exit, and on-site parking of all vehicles, providing comprehensive oversight of traffic flow and physical asset security.",
-          capabilities: [
-            "Plate number scanning",
-            "Entry & exit timestamp",
-            "Parking slot assignment",
-            "Unauthorized vehicle alert",
-          ],
+          image: "/features/fitur9.jpg",
         },
       ],
     },
     {
-      id: "AI Surveillance",
+      id: "Smart CCTV",
       icon: <IoVideocam />,
       contents: [
         {
-          key: "AI Surveillance",
-          title: "Smart CCTV",
-          subtitle: "Cameras Online",
-          count: "32",
+          title: "Smart CCTV (Upcoming)",
           desc: "Enhance perimeter protection with AI- powered surveillance. This advanced module continuously monitors facility grounds, automatically detecting anomalies and unauthorized access to deliver real-time alerts and enable proactive threat mitigation.",
-          capabilities: [
-            "AI anomaly detection",
-            "Unauthorized access alert",
-            "Real-time monitoring feed",
-            "Threat event archiving",
-          ],
+          image: "/features/fitur10.png",
         },
       ],
     },
@@ -252,12 +172,12 @@ export const AllFeatures = () => {
 
       <div className="flex w-full max-w-7xl flex-col">
         {/* Header Section */}
-        <div className="px-12 py-6 text-left lg:py-10 xl:py-6">
+        <div className="px-12 py-6 text-center lg:py-10 xl:py-6">
           <h1 className="text-primary py-2 text-2xl font-black uppercase tracking-tight lg:text-7xl xl:text-4xl">
-            Features
+            All Features
           </h1>
           <p className="mt-4 text-sm font-semibold text-slate-500 lg:text-4xl xl:text-lg">
-            See what Guard can do
+            Explore all Shelter Guard features for seamless cleaning operations.
           </p>
         </div>
 
@@ -271,7 +191,7 @@ export const AllFeatures = () => {
         </div>
 
         {/* Content Section */}
-        <div className="flex w-full items-center border-t border-primary justify-center px-10 py-10">
+        <div className="flex w-full items-center justify-center p-10 bg-blue-50">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -284,93 +204,47 @@ export const AllFeatures = () => {
               {currentData.contents.map((content, index) => (
                 <div
                   key={index}
-                  className="flex w-full flex-col items-start gap-8 lg:flex-row lg:items-center lg:gap-10 xl:gap-12"
+                  className="flex w-full flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-2 xl:gap-16"
                 >
-                  {/* Details Section - Kiri */}
-                  <div className="w-full flex-1 space-y-4 text-left">
-                    {/* Badge */}
-                    <span className="text-primary inline-flex items-center gap-2 rounded-full border border-blue-700 bg-indigo-200 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest lg:px-6 lg:py-4 lg:text-2xl xl:px-4 xl:py-2 xl:text-sm">
-                      {content.key}
-                    </span>
-
+                  {/* LEFT - Details Section */}
+                  <div className="w-full flex-1 space-y-5 text-left">
                     {/* Title */}
-                    <h2 className="text-primary text-3xl font-black leading-tight lg:text-7xl xl:text-5xl">
+                    <h2 className="text-primary text-4xl font-black leading-tight lg:text-[68px] xl:text-5xl">
                       {content.title}
                     </h2>
 
                     {/* Divider */}
-                    <div className="bg-primary h-1 w-16 rounded-full lg:w-32 xl:w-20" />
+                    <div className="h-2 w-40 rounded-full bg-black" />
 
                     {/* Description */}
-                    <p className="text-sm font-medium leading-relaxed text-slate-500 lg:text-3xl xl:text-base">
+                    <p className="text-sm font-bold leading-relaxed text-slate-500 lg:text-4xl xl:text-xl">
                       {content.desc}
                     </p>
+
+                    {/* Dots Indicator */}
+                    <div className="flex items-center gap-2 pt-4">
+                      {features.map((f) => (
+                        <button
+                          key={f.id}
+                          onClick={() => setActiveTab(f.id)}
+                          className={`h-6 rounded-full transition-all duration-300 ${
+                            activeTab === f.id
+                              ? "bg-primary w-20"
+                              : "w-10 cursor-pointer bg-slate-300"
+                          }`}
+                        />
+                      ))}
+                    </div>
                   </div>
 
-                  {/* Card Kanan */}
-                  <div className="w-full flex-1 space-y-3 lg:space-y-5 xl:space-y-4">
-                    {/* Stats Card */}
-                    <div className="bg-primary flex items-center justify-between rounded-2xl px-5 py-4 lg:px-6 lg:py-6 xl:px-6 xl:py-4">
-                      <div className="flex items-center gap-3 lg:gap-4 xl:gap-3">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white lg:h-16 lg:w-16 xl:h-10 xl:w-10">
-                          {React.cloneElement(currentData.icon, {
-                            className: "text-base lg:text-4xl xl:text-xl",
-                          })}
-                        </div>
-                        <div>
-                          <p className="text-xs font-semibold text-white/70 lg:text-3xl xl:text-sm">
-                            {content.subtitle}
-                          </p>
-                          <p className="text-2xl font-black text-white lg:text-4xl xl:text-4xl">
-                            {content.count}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 animate-ping rounded-full bg-green-400 lg:h-4 lg:w-4" />
-                        <span className="text-xs font-bold text-white/70 lg:text-xl xl:text-xs">
-                          Live
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Key Capabilities */}
-                    <div className="rounded-2xl bg-slate-200 px-4 py-10">
-                      <p className="text-primary mb-3 text-xs font-bold uppercase tracking-widest lg:mb-8 lg:text-3xl xl:mb-3 xl:text-xs">
-                        Key Capabilities
-                      </p>
-                      <div className="space-y-2 lg:space-y-4 xl:space-y-2">
-                        {content.capabilities.map((cap, i) => (
-                          <div
-                            key={i}
-                            className="border-primary flex items-center gap-3 border-b pb-4 lg:gap-4 xl:gap-3"
-                          >
-                            <CiCircleCheck className="text-primary shrink-0 text-sm lg:text-5xl xl:text-base" />
-                            <span className="py-2 text-sm font-semibold text-slate-600 lg:text-3xl xl:text-sm">
-                              {cap}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
+                  {/* RIGHT - Phone Frame */}
+                  <div className="flex w-full flex-1 justify-center">
+                    <div className="max-w-62.5 lg:max-w-100 w-full xl:max-w-80">
+                      <PhoneFrame screenshot={content.image} />
                     </div>
                   </div>
                 </div>
               ))}
-
-              {/* Dots Indicator */}
-              <div className="flex w-full items-center justify-center gap-2 pt-10">
-                {features.map((f) => (
-                  <button
-                    key={f.id}
-                    onClick={() => setActiveTab(f.id)}
-                    className={`h-6 rounded-full transition-all duration-300 ${
-                      activeTab === f.id
-                        ? "bg-primary w-20"
-                        : "w-10 cursor-pointer bg-slate-300"
-                    }`}
-                  />
-                ))}
-              </div>
             </motion.div>
           </AnimatePresence>
         </div>
