@@ -10,7 +10,6 @@ import { FiUsers } from "react-icons/fi";
 import { MdPhone } from "react-icons/md";
 import { LuNotebookText } from "react-icons/lu";
 import { IoBook, IoVideocam } from "react-icons/io5";
-import { CiCircleCheck } from "react-icons/ci";
 
 export const AllFeatures = () => {
   const navigate = useNavigate();
@@ -42,7 +41,7 @@ export const AllFeatures = () => {
       contents: [
         {
           title: "Keys Control & Management",
-          desc: "To ensure all company assets remain secure while providing authorized personnel with necessary access.To ensure all company assets remain secure while providing authorized personnel with necessary access.",
+          desc: "To ensure all company assets remain secure while providing authorized personnel with necessary access.",
           image: "/features/fitur2.png",
         },
       ],
@@ -81,7 +80,7 @@ export const AllFeatures = () => {
       ],
     },
     {
-      id: "Telephone Log",
+      id: "Call Log",
       icon: <MdPhone />,
       contents: [
         {
@@ -191,7 +190,7 @@ export const AllFeatures = () => {
         </div>
 
         {/* Content Section */}
-        <div className="flex w-full items-center justify-center p-10 bg-blue-50">
+        <div className="flex w-full items-center justify-center bg-blue-50 p-10">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}

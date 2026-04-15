@@ -78,7 +78,7 @@ export const Menu = () => {
             A security management platform for professionals
           </h1>
           <p className="mt-4 px-4 text-sm font-medium text-black lg:mt-4 lg:px-2 lg:text-[40px] xl:mt-0 xl:px-10 xl:text-lg">
-            Monitor guards, patrols, and incidents in real time
+            Security guards, patrols, and incidents monitoring in real time
           </p>
         </div>
 
@@ -154,7 +154,7 @@ export const Menu = () => {
           {/* Tombol Kembali */}
           <button
             onClick={() => navigate(-1)}
-            className="group flex cursor-pointer items-center gap-4 rounded-full border border-primary bg-white px-6 py-2 shadow-lg transition-all hover:scale-110 hover:bg-primary lg:px-12 lg:py-8 xl:px-4 xl:py-4"
+            className="border-primary hover:bg-primary group flex cursor-pointer items-center gap-4 rounded-full border bg-white px-6 py-2 shadow-lg transition-all hover:scale-110 lg:px-12 lg:py-8 xl:px-4 xl:py-4"
           >
             <FaArrowLeft className="text-primary text-base group-hover:text-white lg:text-4xl xl:text-lg" />
             <span className="text-primary text-sm font-bold uppercase group-hover:text-white lg:text-3xl xl:text-base">
@@ -163,7 +163,7 @@ export const Menu = () => {
           </button>
 
           {/* Divider vertikal tipis agar mirip desain referensi */}
-          <div className="h-8 w-1 bg-primary lg:h-16" />
+          <div className="bg-primary h-8 w-1 lg:h-16" />
 
           {/* Tombol Home */}
           <button

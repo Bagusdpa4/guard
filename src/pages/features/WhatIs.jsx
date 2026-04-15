@@ -19,7 +19,7 @@ export const WhatIs = () => {
     {
       title: "Patrol Management",
       description:
-        "Ensure absolute area coverage. Digitize guard tours with real-time GPS tracking, checkpoint verification, and instant anomaly reporting to maintain strict operational compliance.",
+        "Ensure absolute area coverage. Digitalize guard tours with real-time GPS tracking, checkpoint verification, and instant anomaly reporting to maintain strict operational compliance.",
       icon: <FaLocationDot />,
       bgIcon: "bg-blue-900",
     },
@@ -171,7 +171,7 @@ export const WhatIs = () => {
           </span>
 
           {/* Benefits Cards */}
-          <div className="grid grid-cols-2 gap-6 p-2">
+          <div className="grid grid-cols-2 gap-6 p-2 pb-40">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
