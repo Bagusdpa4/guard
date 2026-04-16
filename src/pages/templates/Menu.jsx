@@ -14,25 +14,25 @@ export const Menu = () => {
     {
       title: "What is Shelter Guard ?",
       icon: <PiWarningCircle />,
-      bgIcon: "bg-blue-900",
+      bgIcon: "bg-slate-200",
       path: "/what-is",
     },
     {
       title: "Features",
       icon: <FaRegStar />,
-      bgIcon: "bg-blue-900",
+      bgIcon: "bg-slate-200",
       path: "/all-features",
     },
     {
       title: "How It Works",
       icon: <BiRepost />,
-      bgIcon: "bg-blue-900",
+      bgIcon: "bg-slate-200",
       path: "/how-it-works",
     },
     {
       title: "Request Demo",
       icon: <IoRocketOutline />,
-      bgIcon: "bg-blue-900",
+      bgIcon: "bg-slate-200",
       path: "/req-demo",
     },
   ];
