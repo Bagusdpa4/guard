@@ -9,11 +9,11 @@ import { IoIosKey } from "react-icons/io";
 import { FiUsers } from "react-icons/fi";
 import { MdPhone } from "react-icons/md";
 import { LuNotebookText } from "react-icons/lu";
-import { IoBook, IoVideocam } from "react-icons/io5";
+import { IoBook, IoVideocam, IoShieldOutline } from "react-icons/io5";
 
 export const AllFeatures = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState("Transporter");
+  const [activeTab, setActiveTab] = useState("Patrol");
 
   useEffect(() => {
     window.scrollTo({
@@ -24,6 +24,17 @@ export const AllFeatures = () => {
   }, []);
 
   const features = [
+    {
+      id: "Patrol",
+      icon: <IoShieldOutline />,
+      contents: [
+        {
+          title: "Patrol",
+          desc: "Transform routine patrols into actionable, real-time data. Track every incident and field finding with precision, complete with location, timestamp and escalation status, all on one smart dashboard. Take total control of your facility operations.",
+          image: "/features/fitur.jpeg",
+        },
+      ],
+    },
     {
       id: "Transporter",
       icon: <CiDeliveryTruck />,
@@ -203,7 +214,7 @@ export const AllFeatures = () => {
               {currentData.contents.map((content, index) => (
                 <div
                   key={index}
-                  className="flex w-full flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-2 xl:gap-16"
+                  className="flex w-full flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-6 xl:gap-16"
                 >
                   {/* LEFT - Details Section */}
                   <div className="w-full flex-1 space-y-5 text-left">
@@ -216,7 +227,7 @@ export const AllFeatures = () => {
                     <div className="h-2 w-40 rounded-full bg-black" />
 
                     {/* Description */}
-                    <p className="text-sm font-bold leading-relaxed text-slate-500 lg:text-4xl xl:text-xl">
+                    <p className="text-justify text-sm font-bold leading-relaxed text-slate-500 lg:text-4xl xl:text-xl">
                       {content.desc}
                     </p>
 
